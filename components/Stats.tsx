@@ -4,8 +4,8 @@ import useSWR from "swr";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
 
-import { FaYoutube, FaGithub } from "react-icons/fa";
-import { ArrowTrendingUpIcon } from "@heroicons/react/20/solid";
+import { FaYoutube, FaGithub, FaLinkedin, FaMailBulk, FaVoicemail } from "react-icons/fa";
+import { ArrowTrendingUpIcon, ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 import FlipNumber from "@/components/FlipNumber";
 import fetcher from "@/lib/fetcher";
@@ -58,39 +58,34 @@ export default function Stats() {
       <li className="transition-opacity">
         <Link
           className="flex gap-3 items-center no-underline"
-          href={"https://github.com/brianruizy"}
+          href={"https://github.com/markhudsonn"}
         >
           <FaGithub className="text-xl" />
           <div>
-            <FlipNumber>
-              {githubData ? addCommas(githubData?.stars) : "000"}
-            </FlipNumber>
-            <span> Repository Stars</span>
+            <span> Github</span>
           </div>
         </Link>
       </li>
       <li className="transition-opacity">
-        <Link className="flex gap-3 items-center" href="/blog">
-          <ArrowTrendingUpIcon className="w-5 h-5" />
+        <Link 
+          className="flex gap-3 items-center" 
+          href={"https://www.linkedin.com/in/markhuds/"}
+        >
+          
+          <FaLinkedin className="w-5 h-5" />
           <div>
-            <FlipNumber>
-              {postsData ? addCommas(postsData?.total) : "0,000"}
-            </FlipNumber>
-            <span> Total Blog Views</span>
+            <span> LinkedIn</span>
           </div>
         </Link>
       </li>
       <li className="transition-opacity">
         <Link
           className="flex gap-3 items-center no-underline"
-          href={"https://www.youtube.com/@" + username}
+          href={"mailto:markhudsonn4@gmail.com"}
         >
-          <FaYoutube className="text-xl" />
+          <ArrowUpRightIcon className="w-5 h-5" />
           <div>
-            <FlipNumber>
-              {youtubeData ? addCommas(youtubeData?.subscribers) : "00,000"}
-            </FlipNumber>
-            <span> YouTube Subscribers</span>
+            <span> Email me</span>
           </div>
         </Link>
       </li>
