@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "@/components/ui/Link";
 import { allPosts } from ".contentlayer/generated";
+import Section from "@/components/Section";
+
+import Workplaces from "./about/components/Workplaces";
+import deluxebaseLogo from "public/work/deluxebase-logo.png";
+import newcastleLogo from "public/education/newcastle-university-logo.png";
+import tranbyLogo from "public/education/tranby-school-logo.png";
+import hullCollegiateLogo from "public/education/hull-collegiate-school-logo.png";
 
 import PostList from "./blog/components/ui/PostList";
 import Stats from "@/components/Stats";
@@ -17,17 +24,17 @@ export default async function Home() {
     .filter((_, i) => i < 3);
 
   return (
-    <div className="flex flex-col gap-16 md:gap-24">
+    <div className="flex flex-col gap-16 md:gap-10">
       <div className="flex animate-in flex-col gap-8">
         <div>
           <h1 className="animate-in text-3xl font-bold tracking-tight text-primary">
-            Brian Ruiz
+            Mark Hudson
           </h1>
           <p
             className="animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            I write code and make videos.
+            Computer Science Undergrad @ Newcastle University.
           </p>
         </div>
         <div
@@ -43,51 +50,126 @@ export default async function Home() {
           />
           <Stats />
         </div>
-        <p
-          className="max-w-lg animate-in text-primary"
-          style={{ "--index": 2 } as React.CSSProperties}
-        >
-          Hi, I&apos;m Brian Ruiz, a software engineer who loves building cool
-          things with code. In addition to coding, I also make YouTube videos,
-          where I focus on tech, creative vlogs, and personal development.
-        </p>
-        <ul
-          className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
-          style={{ "--index": 2 } as React.CSSProperties}
-        >
-          <li className="transition-opacity">
-            <Link
-              href="mailto:contact@b-r.io"
-              className="flex items-center gap-2 no-underline"
-            >
-              <ArrowUpRightIcon className="h-5 w-5" />
-              <span>Email me</span>
-            </Link>
-          </li>
-          <li className="transition-opacity">
-            <Link
-              href="/links"
-              className="flex items-center gap-2 no-underline"
-            >
-              <ArrowUpRightIcon className="h-5 w-5" />
-              <span>More ways to connect</span>
-            </Link>
-          </li>
-        </ul>
       </div>
       <div
-        className="flex animate-in flex-col gap-8"
+        className="flex flex-col gap-10 animate-in md:gap-"
         style={{ "--index": 3 } as React.CSSProperties}
       >
-        <h2 className="text-secondary">Latest Posts</h2>
-        <PostList posts={posts} />
-        <Link
-          href="/blog"
-          className="text-secondary underline underline-offset-4 hover:text-primary"
-        >
-          See All
-        </Link>
+        <Section heading="About" headingAlignment="left">
+          <div className="flex flex-col gap-6">
+            <p>Hello world, I'm Mark Hudson!</p>
+
+            <p>
+              I have a passion for coding and have am currently in my second year of my Computer Science degree at Newcastle University.
+            </p>
+            <p>
+              Other than coding, I enjoy football, running, skiing and travelling.
+            </p>
+            <p>
+              To find out about my projects and work experience, check out the <Link className = "underline" href="/blog">blog</Link> and <Link className = "underline" href="/projects">projects</Link> pages.
+            </p>
+          </div>
+        </Section>
+        <Section heading="Education" headingAlignment="left">
+          <div className="flex flex-col w-full gap-8">
+            <Workplaces items={education} />
+          </div>
+        </Section>
+        <Section heading="Work" headingAlignment="left">
+          <div className="flex flex-col w-full gap-8">
+            <p>
+              Currently working part time remotely as a Business Developer at {" "}
+              <Link
+                className="underline"
+                href="https://deluxebase.com"
+              >
+                Deluxebase
+              </Link>, creating bespoke applications and automating processes.
+            </p>
+            <p>
+              Worked Summers at Deluxebase between 2020 and 2022. This involved creating and optimising Amazon listings, analysing the IT infrastructure to create a document, upgrading systems and also driving Ecommerce sales through email marketing.
+            </p>
+            <Workplaces items={workplaces} />
+          </div>
+        </Section>
       </div>
     </div>
   );
 }
+
+const workplaces = [
+  {
+    title: "Business Developer",
+    company: "Deluxebase",
+    time: "May '23 - Present",
+    imageSrc: deluxebaseLogo,
+    link: "https://deluxebase.com",
+  },
+  {
+    title: "IT and E-commerce Sales",
+    company: "Deluxebase",
+    time: "June '22 - September '22",
+    imageSrc: deluxebaseLogo,
+    link: "https://deluxebase.com",
+  },
+  {
+    title: "IT Systems Analyst",
+    company: "Deluxebase",
+    time: "June '21 - September '21",
+    imageSrc: deluxebaseLogo,
+    link: "https://deluxebase.com",
+  },
+  {
+    title: "E-commerce",
+    company: "Deluxebase",
+    time: "June '20 - October '20",
+    imageSrc: deluxebaseLogo,
+    link: "https://deluxebase.com",
+  },
+];
+
+const education = [
+  {
+    title: "BSc Computer Science",
+    company: "Newcastle University",
+    time: "Undergraduate",
+    imageSrc: newcastleLogo,
+    link: "https://newcastle.ac.uk",
+  },
+  {
+    title: "Edexcel A-Level Maths",
+    company: "Tranby School",
+    time: "A*",
+    imageSrc: tranbyLogo,
+    link: "https://www.tranby.org.uk/",
+  },
+  {
+    title: "OCR A-Level Computer Science",
+    company: "Tranby School",
+    time: "A*",
+    imageSrc: tranbyLogo,
+    link: "https://www.tranby.org.uk/",
+  },
+  {
+    title: "AQA A-Level Physics",
+    company: "Tranby School",
+    time: "A",
+    imageSrc: tranbyLogo,
+    link: "https://www.tranby.org.uk/",
+  },
+  {
+    title: "OCR Additional Maths",
+    company: "Hull Collegiate School",
+    time: "A",
+    imageSrc: hullCollegiateLogo,
+    link: "https://www.tranby.org.uk/",
+  },
+  {
+    title: "GCSEs",
+    company: "Hull Collegiate School",
+    time: "5x Grade 9s, 5x Grade 8s",
+    imageSrc: hullCollegiateLogo,
+    link: "https://www.tranby.org.uk/",
+  }
+];
+
