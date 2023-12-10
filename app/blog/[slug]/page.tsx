@@ -6,7 +6,6 @@ import { allPosts, Post as PostType } from ".contentlayer/generated";
 import Tags from "@/components/Tags";
 import Link from "@/components/ui/Link";
 import Mdx from "@/app/blog/components/ui/MdxWrapper";
-import ViewCounter from "@/app/blog/components/ui/ViewCounter";
 import PostList from "@/app/blog/components/ui/PostList";
 import { formatDate } from "lib/formatdate";
 
@@ -113,7 +112,6 @@ export default async function Post({ params }: { params: any }) {
                   ? `(Updated ${formatDate(post.updatedAt)})`
                   : ""}
                 {" · "}
-                <ViewCounter post={post} />
               </p>
             </div>
           </div>
