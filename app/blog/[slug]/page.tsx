@@ -8,7 +8,6 @@ import Link from "@/components/ui/Link";
 import Mdx from "@/app/blog/components/ui/MdxWrapper";
 import ViewCounter from "@/app/blog/components/ui/ViewCounter";
 import PostList from "@/app/blog/components/ui/PostList";
-import Subscribe from "@/app/blog/components/ui/NewsletterSignupForm";
 import { formatDate } from "lib/formatdate";
 
 import Avatar from "@/public/avatar.png";
@@ -147,7 +146,7 @@ export default async function Post({ params }: { params: any }) {
 
       <Tags tags={post.tags} />
 
-      <Subscribe />
+      {/* <Subscribe /> */}
 
       <Link href="/blog">← All Blogs</Link>
       {/* {related.length ? (

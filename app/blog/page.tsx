@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { allPosts } from ".contentlayer/generated";
 import PostList from "./components/ui/PostList";
-import NewsletterSignupForm from "./components/ui/NewsletterSignupForm";
 
 export const metadata: Metadata = {
   title: "Blog | Brian Ruiz",
@@ -38,7 +37,6 @@ export default function Blog() {
         className="animate-in"
         style={{ "--index": 3 } as React.CSSProperties}
       >
-        <NewsletterSignupForm/>
       </div>
     </div>
   );
