@@ -275,3 +275,19 @@ pre[class*="language-"] {
   color: var(--gray-8); /* Line number color */
   content: attr(line);
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
