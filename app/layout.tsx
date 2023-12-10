@@ -6,6 +6,7 @@ import clsx from "clsx";
 
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,9 +42,11 @@ export default function RootLayout({
           >
             {children}
           </div>
+          <Footer />
         </ThemeProvider>
         <Analytics />
       </body>
+      
     </html>
   );
 }
