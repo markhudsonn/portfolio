@@ -16,7 +16,7 @@ import meLily from "public/gallery/me-lily.jpg";
 import colorado from "public/gallery/colorado.jpg";
 
 export const metadata: Metadata = {
-  title: "About | Brian Ruiz",
+  title: "About | Mark Hudson",
   description:
     "I am a full-stack software engineer who basically just enjoys creating things.",
 };

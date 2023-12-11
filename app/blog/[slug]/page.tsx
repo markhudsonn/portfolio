@@ -45,17 +45,17 @@ export async function generateMetadata(
   const ogImage = `https://b-r.io/${image}`;
 
   const metadata: Metadata = {
-    title: `${title} | Brian Ruiz`,
+    title: `${title} | Mark Hudson`,
     description,
     openGraph: {
-      title: `${title} | Brian Ruiz`,
+      title: `${title} | Mark Hudson`,
       description,
       type: "article",
       publishedTime,
-      url: `https://b-r.io/blog/${title}`,
+      url: `https://markhuds.com/blog/${title}`,
       images: [
         {
-          url: `https://b-r.io/api/og?title=${title}`,
+          url: `https://markhuds.com/api/og?title=${title}`,
           alt: title,
         },
       ],

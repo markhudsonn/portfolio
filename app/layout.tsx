@@ -11,9 +11,9 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Home | Brian Ruiz",
+  title: "Home | Mark Hudson",
   description:
-    "I am a full-stack software engineer who basically just enjoys creating things.",
+    "Computer Science undergraduate at Newcastle Univerity with a passion for coding.",
 };
 
 export default function RootLayout({

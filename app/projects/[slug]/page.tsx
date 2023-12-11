@@ -75,8 +75,8 @@ export default function Project({ params }: { params: any }) {
           <p className="max-w-lg text-secondary">
             Need more project details, or interested in working together? Reach
             out to me directly at{" "}
-            <a href="mailto:contact@b-r.io" className="text-primary underline">
-              brian@b-r.io
+            <a href="mailto:contact@markhudsonn4@gmail.com" className="text-primary underline">
+              markhudsonn4@gmail.com
             </a>
             . I&apos;d be happy to connect!{" "}
           </p>

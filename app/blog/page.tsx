@@ -3,7 +3,7 @@ import { allPosts } from ".contentlayer/generated";
 import PostList from "./components/ui/PostList";
 
 export const metadata: Metadata = {
-  title: "Blog | Brian Ruiz",
+  title: "Blog | Mark Hudson",
   description:
     "I write about programming, design, and occasionally life updates!",
 };
