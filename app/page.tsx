@@ -60,7 +60,7 @@ export default async function Home() {
             <p>Hello world, I&apos;m Mark Hudson!</p>
 
             <p>
-              I have a passion for coding and have am currently in my second year of my Computer Science degree at Newcastle University.
+             I have a passion coding; I am currently in my second year of studying for a Computer Science degree at Newcastle University.
             </p>
             <p>
               Other than coding, I enjoy football, running, skiing and travelling.
