@@ -103,7 +103,7 @@ export default async function Post({ params }: { params: any }) {
               className="rounded-full bg-secondary"
             />
             <div className="leading-tight">
-              <p className="font-medium text-primary">Brian Ruiz</p>
+              <p className="font-medium text-primary">Mark Hudson</p>
               <p className="text-secondary">
                 <time dateTime={post.publishedAt}>
                   {formatDate(post.publishedAt)}
@@ -111,7 +111,6 @@ export default async function Post({ params }: { params: any }) {
                 {post.updatedAt
                   ? `(Updated ${formatDate(post.updatedAt)})`
                   : ""}
-                {" · "}
               </p>
             </div>
           </div>
