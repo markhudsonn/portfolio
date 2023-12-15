@@ -1,6 +1,6 @@
 ---
 title: "Purchasing App"
-time: "2023"
+time: "August 2023"
 description: "Developed a reordering application to streamline the purchasing process for Deluxebase"
 tags: ["Python", "Retool", "PostgreSQL", "ERP"]
 ---
@@ -10,7 +10,7 @@ tags: ["Python", "Retool", "PostgreSQL", "ERP"]
   alt="purchasing-app-main"
   width={2267}
   height={1280}
-  caption="Displays key information calculated in real time on each product: projected stock levle upon new stock arrival, stock out dates, reorder quantities, current stock levels, in transit, on order, and more."
+  caption="Displays key information calculated in real time on each product: projected stock level upon new stock arrival, stock out dates, reorder quantities, current stock levels, in transit, on order, and more."
 />
 
 <Image
@@ -18,13 +18,21 @@ tags: ["Python", "Retool", "PostgreSQL", "ERP"]
   alt="purchasing-app-filters"
   width={2267}
   height={1280}
-  caption="Filters allow users to quickly find products that need to be reordered."
+  caption="Settings allow: report to be by company, change backorder dates used in calculations, change the multiplier used in calculations, refresh the report, and more."
 />
 
 <Image
-  src="/projects/purchasing-app/port-settings.png"
-  alt="purchasing-app-port-settings"
+  src="/projects/purchasing-app/multiplier.png"
+  alt="purchasing-app-multiplier"
   width={2267}
   height={1280}
-  caption="Customisable port settings, affecting the calculation of stock out dates and reorder quantities."
+  caption="Average monthly forecast used in calculations but a custom multiplier is applied. Calculations are adjusted pro rata."
+/>
+
+<Image
+  src="/projects/purchasing-app/flow.png"
+  alt="purchasing-app-flow"
+  width={2267}
+  height={1280}
+  caption="The Windmill flow called by Retool to get data."
 />

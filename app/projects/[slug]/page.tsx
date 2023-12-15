@@ -73,12 +73,11 @@ export default function Project({ params }: { params: any }) {
         <div className="flex flex-col gap-6">
           <h2>Contact</h2>
           <p className="max-w-lg text-secondary">
-            Need more project details, or interested in working together? Reach
-            out to me directly at{" "}
+            Need more project details, or want to connect? Email me at{" "}
             <a href="mailto:contact@markhudsonn4@gmail.com" className="text-primary underline">
               markhudsonn4@gmail.com
             </a>
-            . I&apos;d be happy to connect!{" "}
+            !
           </p>
         </div>
 
