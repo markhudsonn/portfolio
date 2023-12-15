@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
+import avatar from "public/avatar.png";
+import Image from "next/image";
 
 import NavLink from "./ui/NavLink";
 import ThemeSwitcher from "./ThemeSwitcher";
@@ -24,6 +26,13 @@ export default function Navigation() {
   return (
     <header className={clsx("relative md:sticky top-0 z-20 bg-primary")}>
       <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-1">
+      <Link href="/" className="hidden shrink-0 sm:block">
+        <Image
+          src={avatar}
+          alt="avatar"
+          className="w-10 h-10 rounded-full"
+        />
+      </Link>
         <ul className="hidden md:flex items-center gap-1">
           {links.map((link) => (
             <li key={link.href}>
