@@ -3,7 +3,7 @@ import Link from "@/components/ui/Link";
 import { allPosts } from ".contentlayer/generated";
 import Section from "@/components/Section";
 
-import Workplaces from "./about/components/Workplaces";
+import Workplaces from "../components/Workplaces";
 import deluxebaseLogo from "public/work/deluxebase-logo.png";
 import newcastleLogo from "public/education/newcastle-university-logo.png";
 import tranbyLogo from "public/education/tranby-school-logo.png";
@@ -113,7 +113,7 @@ const workplaces = [
     link: "https://deluxebase.com",
   },
   {
-    title: "IT Systems Analyst",
+    title: "IT Systems",
     company: "Deluxebase",
     time: "June '21 - September '21",
     imageSrc: deluxebaseLogo,
@@ -132,7 +132,7 @@ const education = [
   {
     title: "BSc Computer Science",
     company: "Newcastle University",
-    time: "Undergraduate",
+    time: "Undergrad",
     imageSrc: newcastleLogo,
     link: "https://newcastle.ac.uk",
   },
