@@ -31,6 +31,7 @@ export default function Navigation() {
           src={avatar}
           alt="avatar"
           className="w-10 h-10 rounded-full"
+          loading="eager"
         />
       </Link>
         <ul className="hidden md:flex items-center gap-1">
