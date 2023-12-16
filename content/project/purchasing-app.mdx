@@ -2,8 +2,13 @@
 title: "Purchasing App"
 time: "August 2023"
 description: "Developed a reordering application to streamline the purchasing process for Deluxebase"
-tags: ["Python", "Retool", "PostgreSQL", "ERP"]
+tags: ["Python", "Retool", "PostgreSQL", "ERP", "Windmill"]
 ---
+
+## Overview
+- Reordering was previously a manual process, using multiple Excel sheets each time for over 2,000 products
+- The process was time consuming, error prone, and difficult for others to carry out
+- ERP system did not have the functionality to produce the required reports
 
 <Image 
   src="/projects/purchasing-app/image.png"
@@ -26,7 +31,7 @@ tags: ["Python", "Retool", "PostgreSQL", "ERP"]
   alt="purchasing-app-multiplier"
   width={2267}
   height={1280}
-  caption="Average monthly forecast used in calculations but a custom multiplier is applied. Calculations are adjusted pro rata."
+  caption="Calculations utilize an average monthly forecast, with custom multipliers applied pro rata."
 />
 
 <Image
@@ -34,5 +39,12 @@ tags: ["Python", "Retool", "PostgreSQL", "ERP"]
   alt="purchasing-app-flow"
   width={2267}
   height={1280}
-  caption="The Windmill flow called by Retool to get data."
+  caption="Retool posts to Windmill Python flow which handles the calculations and returns the data."
 />
+
+## Outcomes
+- Excel manual work replaced with a single, real-time report
+- More accurate reordering as backorder date can be filtered and each item factors in the manufacturer lead time
+- Better stock levels as process can be carried out more frequently
+- Approximately 6 Weeks annually saved for reordering in the UK alone
+- Allows stock movement from UK to USA to easily be calculated. A rapidly growing part of the business.
