@@ -99,7 +99,7 @@ export default async function Home() {
 
 const workplaces = [
   {
-    title: "Business Developer",
+    title: "Business Application Developer",
     company: "Deluxebase",
     time: "May '23 - Present",
     imageSrc: deluxebaseLogo,
@@ -108,21 +108,21 @@ const workplaces = [
   {
     title: "IT and E-commerce Sales",
     company: "Deluxebase",
-    time: "June '22 - September '22",
+    time: "Jun '22 - Sep '22",
     imageSrc: deluxebaseLogo,
     link: "https://deluxebase.com",
   },
   {
     title: "IT Systems",
     company: "Deluxebase",
-    time: "June '21 - September '21",
+    time: "Jun '21 - Sep '21",
     imageSrc: deluxebaseLogo,
     link: "https://deluxebase.com",
   },
   {
     title: "E-commerce",
     company: "Deluxebase",
-    time: "June '20 - October '20",
+    time: "Jun '20 - Oct '20",
     imageSrc: deluxebaseLogo,
     link: "https://deluxebase.com",
   },
@@ -159,16 +159,16 @@ const education = [
   },
   {
     title: "OCR Additional Maths",
-    company: "Hull Collegiate School",
+    company: "Tranby School",
     time: "A",
-    imageSrc: hullCollegiateLogo,
+    imageSrc: tranbyLogo,
     link: "https://www.tranby.org.uk/",
   },
   {
     title: "GCSEs",
-    company: "Hull Collegiate School",
-    time: "5x Grade 9s, 5x Grade 8s",
-    imageSrc: hullCollegiateLogo,
+    company: "Tranby School",
+    time: "5x Grade 9s,\n5x Grade 8s",
+    imageSrc: tranbyLogo,
     link: "https://www.tranby.org.uk/",
   }
 ];
