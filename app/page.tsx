@@ -106,7 +106,7 @@ const workplaces = [
     link: "https://deluxebase.com",
   },
   {
-    title: "IT and E-commerce Sales",
+    title: "IT & E-commerce",
     company: "Deluxebase",
     time: "Jun '22 - Sep '22",
     imageSrc: deluxebaseLogo,
