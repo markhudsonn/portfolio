@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Home | Mark Hudson",
   description:
-    "Computer Science undergraduate at Newcastle Univerity with a passion for coding.",
+    "Computer Science undergraduate at Newcastle University with a passion for coding.",
 };
 
 export default function RootLayout({
