@@ -5,7 +5,7 @@ import PostList from "./components/ui/PostList";
 export const metadata: Metadata = {
   title: "Blog | Mark Hudson",
   description:
-    "I write about programming, design, and occasionally life updates!",
+    "Some blogs about coding and more ...",
 };
 
 export default function Blog() {
@@ -23,7 +23,7 @@ export default function Blog() {
             className="animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            {posts.length} posts about code, design, more ...
+            {posts.length} blog posts about coding projects and more ...
           </p>
         </div>
       </div>
