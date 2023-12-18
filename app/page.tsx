@@ -57,7 +57,7 @@ export default async function Home() {
       >
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
-            <p>Hello, I&apos;m Mark Hudson!</p>
+            <p>Hello, I&apos;m Mark.</p>
 
             <p>
              I have a for passion coding; I am currently in my second year of studying for a Computer Science degree at Newcastle University.
