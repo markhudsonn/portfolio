@@ -21,7 +21,9 @@ export default function Post({ post, mousePosition }: PostProps) {
     Math.abs(new Date(publishDate).getTime() - new Date().getTime()) /
       (24 * 60 * 60 * 1000) <
     30;
-  const imageHeight = 150;
+  const originalHeight = 1266;
+  const originalWidth = 2048;
+  const imageHeight = (originalHeight / originalWidth) * 300;
   const imageWidth = 300;
   const imageOffset = 24;
 

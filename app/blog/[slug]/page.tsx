@@ -42,7 +42,7 @@ export async function generateMetadata(
     slug,
   } = post;
 
-  const ogImage = `https://b-r.io/${image}`;
+  const ogImage = `https://markhuds.com/${image}`;
 
   const metadata: Metadata = {
     title: `${title} | Mark Hudson`,
