@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import clsx from "clsx";
+import Head from "next/head";
 
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
@@ -23,6 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+      <script async src="https://eu.umami.is/script.js" data-website-id="060ac987-f2d7-4d0f-b5f0-d7e911a7b1f9"></script>
+      </Head>
       <body
         className={clsx(
           inter.className,
