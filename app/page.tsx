@@ -66,7 +66,7 @@ export default async function Home() {
               Other than coding, I enjoy football, running, skiing and travelling.
             </p>
             <p>
-              To find out about my projects and work experience, check out the <Link className = "underline" href="/blog">blog</Link> and <Link className = "underline" href="/projects">projects</Link> pages.
+              To find out about my projects and work experience, check out the <Link className = "underline" href="/projects">projects</Link> pages.
             </p>
           </div>
         </Section>
