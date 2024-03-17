@@ -31,7 +31,7 @@ export default function Blog() {
         className="animate-in"
         style={{ "--index": 2 } as React.CSSProperties}
       >
-        <PostList posts={posts} />
+        {/* <PostList posts={posts} /> */}
       </div>
       <div
         className="animate-in"
