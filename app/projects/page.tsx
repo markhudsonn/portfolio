@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Blog() {
   const projects = allProjects;
-  const order = ['purchasing-app', 'value-betting-bot','forecast-generator']
+  const order = ['purchasing-app', 'full-stack-wordle','value-betting-bot','forecast-generator']
   projects.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug))
 
   return (
