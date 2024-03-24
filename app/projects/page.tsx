@@ -45,7 +45,7 @@ export default function Blog() {
             )}
           >
             <Link
-              href={`/projects/${project.slug}`}
+              href={project.slug === 'full-stack-wordle' ? "https://wordle.markhuds.com/" : `/projects/${project.slug}`}
               className="w-full md:w-2/5 aspect-video bg-tertiary rounded-lg border border-secondary overflow-clip select-none"
             >
               <Halo strength={10}>
@@ -61,7 +61,7 @@ export default function Blog() {
             <div className="w-full md:w-3/5 space-y-2">
               <div>
                 <Link
-                  href={`/projects/${project.slug}`}
+                  href={project.slug === 'full-stack-wordle' ? "https://wordle.markhuds.com/" : `/projects/${project.slug}`}
                   className="text-primary font-medium hover:underline"
                 >
                   {project.title}
