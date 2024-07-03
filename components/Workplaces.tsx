@@ -11,9 +11,10 @@ type Workplace = {
   imageSrc: string | StaticImageData;
   time?: string;
   link?: string;
+  description?: string;
 };
 
-function Workplace({ title, company, imageSrc, time, link }: Workplace) {
+function Workplace({ title, company, imageSrc, time, link, description }: Workplace) {
   const { theme } = useTheme();
 
   const content = (
@@ -32,6 +33,7 @@ function Workplace({ title, company, imageSrc, time, link }: Workplace) {
         <div className="flex flex-col gap-px">
           <p className={link ? "external-arrow" : ""}>{title}</p>
           <p className="text-secondary">{company}</p>
+          {description && <p className="text-tertiary">{description}</p>}
         </div>
       </div>
       {time && <time className="text-secondary">{time}</time>}
