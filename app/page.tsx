@@ -8,6 +8,7 @@ import deluxebaseLogo from "public/work/deluxebase-logo.png";
 import newcastleLogo from "public/education/newcastle-university-logo.png";
 import tranbyLogo from "public/education/tranby-school-logo.png";
 import hullCollegiateLogo from "public/education/hull-collegiate-school-logo.png";
+import pgLogo from "public/work/pg-logo.png";
 
 import PostList from "./blog/components/ui/PostList";
 import Stats from "@/components/Stats";
@@ -34,7 +35,8 @@ export default async function Home() {
             className="animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            Computer Science Undergrad @ Newcastle University.
+            Comp-Sci Undergrad @ Newcastle University<br />
+            IT Project Management Intern @ Procter & Gamble
           </p>
         </div>
         <div
@@ -60,7 +62,8 @@ export default async function Home() {
             <p>Hello, I&apos;m Mark.</p>
 
             <p>
-             I have a for passion coding; I am currently in my second year of studying for a Computer Science degree at Newcastle University.
+              Currently taking a placement year from my Computer Science degree at Newcastle University to work as an IT Project Management Intern at{" "}
+              <Link href="https://www.pg.co.uk/" className="underline">Procter & Gamble</Link>.
             </p>
             <p>
               Other than coding, I enjoy football, running, skiing and travelling.
@@ -70,28 +73,17 @@ export default async function Home() {
             </p>
           </div>
         </Section>
+        <Section heading="Work" headingAlignment="left">
+          <div className="flex flex-col w-full gap-8">
+            <Workplaces items={workplaces} />
+          </div>
+        </Section>
         <Section heading="Education" headingAlignment="left">
           <div className="flex flex-col w-full gap-8">
             <Workplaces items={education} />
           </div>
         </Section>
-        <Section heading="Work" headingAlignment="left">
-          <div className="flex flex-col w-full gap-8">
-            <p>
-              Currently working part time remotely as a Business Developer at {" "}
-              <Link
-                className="underline"
-                href="https://deluxebase.com"
-              >
-                Deluxebase
-              </Link>, creating bespoke applications and automating processes.
-            </p>
-            <p>
-              Worked Summers at Deluxebase between 2020 and 2022. This involved creating and optimising Amazon listings, analysing the IT infrastructure to create a document, upgrading systems and also driving Ecommerce sales through email marketing.
-            </p>
-            <Workplaces items={workplaces} />
-          </div>
-        </Section>
+
       </div>
     </div>
   );
@@ -99,7 +91,15 @@ export default async function Home() {
 
 const workplaces = [
   {
-    title: "Business Application Developer",
+    title: "IT Project Management Intern",
+    company: "Procter & Gamble",
+    time: "Jul '24 - Jul '25",
+    imageSrc: pgLogo,
+    link: "https://www.pg.co.uk/",
+    description: "Digital Workplace Services"
+  },
+  {
+    title: "Developer",
     company: "Deluxebase",
     time: "May '23 - Present",
     imageSrc: deluxebaseLogo,
