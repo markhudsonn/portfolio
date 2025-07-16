@@ -57,7 +57,7 @@ export default async function Home() {
         className="flex flex-col gap-10 animate-in md:gap-"
         style={{ "--index": 3 } as React.CSSProperties}
       >
-        <Section heading="About" headingAlignment="left">
+        {/* <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
             <p>Hello, I&apos;m Mark.</p>
 
@@ -72,7 +72,7 @@ export default async function Home() {
               To find out about my projects and work experience, check out the <Link className = "underline" href="/projects">projects</Link> pages.
             </p>
           </div>
-        </Section>
+        </Section> */}
         <Section heading="Work" headingAlignment="left">
           <div className="flex flex-col w-full gap-8">
             <Workplaces items={workplaces} />
